@@ -1,0 +1,146 @@
+body
+{
+	margin: 0px;
+	padding: 0px;
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+
+.div{color: #32bad1} .class{color: #ff9031} .equality{color: #b3b1ad} .note{color: #c2d94c}
+.class_css{color: #e7b44c} .note_css1{color: #f29668} .repeat{color: #f07178;}
+.px{color: #ff7328}
+
+
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.number_section
+{
+	display: flex;
+	padding: 0px;
+	margin: 0px;
+}
+.number_section > h3
+{
+	background: #0067ff;
+	margin-left: 10px;
+	color: white;
+	padding: 5px;
+	font-size: 1.5rem;
+}
+
+.grid_section
+{
+	/*border: solid red 2px;*/
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background: #d7d7d7;
+}
+
+.grid_container
+{
+	/*border: solid red 2px;*/
+	margin-left: 20%;
+	margin-right: 20%;
+	background: white;
+}
+@media screen and (max-width: 720px)
+{
+	.grid_container
+	{
+		margin: 0px;
+	}
+}
+
+.grid_title
+{
+	/*border: solid red 2px;*/
+	background: white;
+	padding: 20px 0px 20px 10px;
+}
+
+.grid_title_text
+{
+	/*border: solid red 2px;*/
+	font-size: 16px;
+	text-transform: uppercase;
+}
+
+
+
+
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.grid_demo
+{
+	/*border: solid red 2px;*/
+	display: grid;
+}
+.demo-1
+{
+	grid-template-columns: repeat(3, auto);
+}
+@media screen and (max-width: 720px)
+{
+	.demo-1
+	{
+		grid-template-columns: repeat(2, auto);
+	}
+}
+
+.demo-2
+{
+	grid-template-columns: repeat(3, auto);
+	grid-row-gap: 2px;
+	grid-column-gap: 2px;
+}
+@media screen and (max-width: 720px)
+{
+	.demo-2
+	{
+		grid-template-columns: repeat(2, auto);
+		grid-row-gap: 8px;
+		grid-column-gap: 8px;
+	}
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+
+
+
+.child-title
+{
+	/*border: solid red 2px;*/
+	color: white;
+	font-size: 30px;
+	margin: 0;
+	padding: 10px 0 10px 0;
+}
+
+.box
+{
+	/*border: solid red 2px;*/
+	display: flex;
+	background: #0067ff;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.grid_code_demo
+{
+	/*border: solid blue 2px;*/
+	background-color: #292929;
+	padding: 5px;
+	color: white;
+	font-size: 18px;
+}
+
+.code_header
+{
+	color: #00c813;
+}

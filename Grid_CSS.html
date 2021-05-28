@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>GRID CSS</title>
+	<link rel="stylesheet/less" type="text/css" href="styles.less" />
+	<link rel="stylesheet" href="css/Grid_CSS.css">
+	<link rel="stylesheet" href="css/icons.css">
+</head>
+<body>
+
+	<div class="number_section">
+		<h3>01.1</h3>
+		<h3>Демонстрационный код</h3>
+		<h3>GRID колонки</h3>
+	</div>
+
+	<div class="grid_section">
+		<div class="grid_container">
+			<div class="grid_title">
+				<span class="grid_title_text">
+					Grid Пример
+				</span>
+			</div>
+			<div class="grid_demo demo-1">
+				<div class="box"><h2 class="child-title">A</h2></div>
+				<div class="box"><h2 class="child-title">B</h2></div>
+				<div class="box"><h2 class="child-title">C</h2></div>
+				<div class="box"><h2 class="child-title">D</h2></div>
+				<div class="box"><h2 class="child-title">E</h2></div>
+				<div class="box"><h2 class="child-title">F</h2></div>
+			</div>
+			
+			<div class="grid_title">
+				<span class="grid_title_text">
+					Соответствующий Код
+				</span>
+			</div>
+			<div class="grid_code_demo">
+				<span class="code_header">
+					HTML Code
+					<br>
+					----------------
+					<br><br>
+				</span>
+				<<span class="div">div </span><span class="class">class</span><span class="equality">=</span><span class="note">"grid_demo demo-1"</span>><br>
+				&nbsp; &nbsp; < <span class="div">div </span><span class="class">class</span><span class="equality">=</span><span class="note">"box"</span>>
+				< <span class="div">h2 </span><span class="class">class</span><span class="equality">=</span><span class="note">"child-title"</span>>A
+				< <span class="div">/h2</span> > < <span class="div">/div</span> > <br>
+				&nbsp; &nbsp; < <span class="div">div </span><span class="class">class</span><span class="equality">=</span><span class="note">"box"</span>>
+				< <span class="div">h2 </span><span class="class">class</span><span class="equality">=</span><span class="note">"child-title"</span>>B
+				< <span class="div">/h2</span> > < <span class="div">/div</span> > <br>
+				&nbsp; &nbsp; < <span class="div">div </span><span class="class">class</span><span class="equality">=</span><span class="note">"box"</span>>
+				< <span class="div">h2 </span><span class="class">class</span><span class="equality">=</span><span class="note">"child-title"</span>>C
+				< <span class="div">/h2</span> > < <span class="div">/div</span> > <br>
+				&nbsp; &nbsp; < <span class="div">div </span><span class="class">class</span><span class="equality">=</span><span class="note">"box"</span>>
+				< <span class="div">h2 </span><span class="class">class</span><span class="equality">=</span><span class="note">"child-title"</span>>D
+				< <span class="div">/h2</span> > < <span class="div">/div</span> > <br>
+				&nbsp; &nbsp; < <span class="div">div </span><span class="class">class</span><span class="equality">=</span><span class="note">"box"</span>>
+				< <span class="div">h2 </span><span class="class">class</span><span class="equality">=</span><span class="note">"child-title"</span>>E
+				< <span class="div">/h2</span> > < <span class="div">/div</span> > <br>
+				&nbsp; &nbsp; < <span class="div">div </span><span class="class">class</span><span class="equality">=</span><span class="note">"box"</span>>
+				< <span class="div">h2 </span><span class="class">class</span><span class="equality">=</span><span class="note">"child-title"</span>>F
+				< <span class="div">/h2</span> > < <span class="div">/div</span> > <br>
+				< <span class="div">/div</span>><br><br>
+				<span class="code_header">
+					CSS Code
+					<br>
+					-------------
+					<br><br>
+				</span>
+				<span class="class_css">.grid_demo</span>
+				<br>{<br>&nbsp;&nbsp;&nbsp;
+				<span class="div">display</span><span class="equality">: </span><span class="note_css1">grid</span><span class="equality">;</span>
+				<br>}<br>
+				<span class="class_css">.demo-1</span>
+				<br>{<br>&nbsp;&nbsp;&nbsp;
+				<span class="div">grid-template-columns</span><span class="equality">: </span><span class="repeat">repeat</span>(<span class="class_css">3</span><span class="equality">, </span><span class="note_css1">auto</span>)<span class="equality">;</span>
+				<br>}<br>
+				<span class="px">@media </span><span class="note_css1">screen and </span>(<span class="div">max-widht</span><span class="equality">: </span><span class="class_css">720</span><span class="px">px</span>)
+				<br>{<br>&nbsp;&nbsp;&nbsp;
+				<span class="class_css">.demo-1</span>
+				<br>&nbsp;&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<span class="div">grid-template-columns</span><span class="equality">: </span><span class="repeat">repeat</span>(<span class="class_css">2</span><span class="equality">, </span><span class="note_css1">auto</span>)<span class="equality">;</span>
+				<br>&nbsp;&nbsp;&nbsp;}<br>}
+			</div>
+		</div>
+	</div>
+
+	<div class="number_section">
+		<h3>01.2</h3>
+		<h3>Демонстрационный код</h3>
+		<h3>GRID колонки с отступами по горизонтали и вертикали</h3>
+	</div>
+
+		<div class="grid_section">
+		<div class="grid_container">
+			<div class="grid_title">
+				<span class="grid_title_text">
+					Grid Пример
+				</span>
+			</div>
+			<div class="grid_demo demo-2">
+				<div class="box"><h2 class="child-title">A</h2></div>
+				<div class="box"><h2 class="child-title">B</h2></div>
+				<div class="box"><h2 class="child-title">C</h2></div>
+				<div class="box"><h2 class="child-title">D</h2></div>
+				<div class="box"><h2 class="child-title">E</h2></div>
+				<div class="box"><h2 class="child-title">F</h2></div>
+			</div>
+			<div class="grid_title">
+				<span class="grid_title_text">
+					Соответствующий код
+				</span>
+			</div>
+			<div class="grid_code_demo">
+				<span class="code_header">
+					HTML Code
+					<br>
+					----------------
+					<br><br>
+				</span>
+				<strong>!!! Код индетичен блоку "demo-1" !!!</strong><br><br>
+				<span class="code_header">
+					CSS Code
+					<br>
+					-------------
+					<br><br>
+				</span>
+				<span class="class_css">.grid_demo</span>
+				<br>{<br>&nbsp;&nbsp;&nbsp;
+				<span class="div">display</span><span class="equality">: </span><span class="note_css1">grid</span><span class="equality">;</span>
+				<br>}<br>
+				<span class="class_css">.demo-2</span>
+				<br>{<br>&nbsp;&nbsp;&nbsp;
+				<span class="div">grid-template-columns</span><span class="equality">: </span><span class="repeat">repeat</span>(<span class="class_css">3</span><span class="equality">, </span><span class="note_css1">auto</span>)<span class="equality">;</span>
+				<br>&nbsp;&nbsp;&nbsp;
+				<span class="div">grid-row-gap</span><span class="equality">: </span><span class="class_css">2</span><span class="px">px</span><span class="quality">;</span>
+				<br>&nbsp;&nbsp;&nbsp;
+				<span class="div">grid-column-gap</span><span class="equality">: </span><span class="class_css">2</span><span class="px">px</span><span class="equality">;</span>
+				<br>}<br>
+				<span class="px">@media </span><span class="note_css1">screen and </span>(<span class="div">max-widht</span><span class="equality">: </span><span class="class_css">720</span><span class="px">px</span>)
+				<br>{<br>&nbsp;&nbsp;&nbsp;
+				<span class="class_css">.demo-2</span>
+				<br>&nbsp;&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<span class="div">grid-template-columns</span><span class="equality">: </span><span class="repeat">repeat</span>(<span class="class_css">2</span><span class="equality">, </span><span class="note_css1">auto</span>)<span class="equality">;</span>
+				<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<span class="div">grid-row-gap</span><span class="equality">: </span><span class="class_css">8</span><span class="px">px</span><span class="quality">;</span>
+				<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<span class="div">grid-column-gap</span><span class="equality">: </span><span class="class_css">8</span><span class="px">px</span><span class="equality">;</span>
+				<br>&nbsp;&nbsp;&nbsp;}<br>}
+			</div>
+		</div>
+	</div>
+<script src="//cdn.jsdelivr.net/npm/less@3.13" ></script>
+</body>
+</html>
